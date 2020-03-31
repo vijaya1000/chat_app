@@ -2,11 +2,11 @@ import 'dart:async';
 import 'dart:io';
 import 'package:camera/camera.dart';
 import 'package:chat_app/screens/story_create_screen.dart';
-import 'package:chat_app/widgets/ease_in_widget.dart';
+//import 'package:chat_app/widgets/ease_in_widget.dart';
 import 'package:chat_app/widgets/rounded_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:chat_app/models/camera_file.dart';
+//import 'package:chat_app/models/camera_file.dart';
 import 'package:chat_app/widgets/thumbnail_widget.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:chat_app/widgets/camera_button.dart';
@@ -40,15 +40,15 @@ class _CameraScreenState extends State<CameraScreen>
   }
 
   Future getPermissions() async {
-    Map<PermissionGroup, PermissionStatus> permissions =
-        await PermissionHandler().requestPermissions(
-            [PermissionGroup.storage, PermissionGroup.camera]);
-    if (permissions[PermissionGroup.storage] == PermissionStatus.granted &&
-        permissions[PermissionGroup.camera] == PermissionStatus.granted) {
-      setState(() {
-        isPermitted = true;
-      });
-    }
+    // Map<PermissionGroup, PermissionStatus> permissions =
+    //     await PermissionHandler().requestPermissions(
+    //         [PermissionGroup.storage, PermissionGroup.camera]);
+    // if (permissions[PermissionGroup.storage] == PermissionStatus.granted &&
+    //     permissions[PermissionGroup.camera] == PermissionStatus.granted) {
+    //   setState(() {
+    //     isPermitted = true;
+    //   });
+    // }
   }
 
   @override
