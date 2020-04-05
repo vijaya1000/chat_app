@@ -91,5 +91,4 @@ configurations.all {
         }
     }
 }
-apply plugin: 'com.google.gms.google-services'
 apply plugin: 'com.onesignal.androidsdk.onesignal-gradle-plugin'

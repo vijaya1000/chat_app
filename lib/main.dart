@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
           fontFamily: "Ubuntu",
           primarySwatch: Colors.blue,
           primaryColor: Color(0xff0084FF)),
-      home: SplashScreen(),
+      home: MainScreen(),
       routes: {
         '/main': (context) => MainScreen(),
         '/camera': (context) => CameraScreen(),
